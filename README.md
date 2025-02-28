@@ -89,3 +89,8 @@ new Map();
 
 - Added input box to send the message and chat inside live chat session
 - added chat slice
+
+- Learnt about useMemo, useCallback and useRef
+- useMemo - to reduce heavy calculation
+- useCallback - to reduce heavy function def cache
+- useRef - it will persist the value when rerendering- so basically it will not render again on state change
