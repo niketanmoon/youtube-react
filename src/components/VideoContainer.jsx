@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { YOUTUBE_VIDEOS_API } from "../utils/constants";
-import VideoCard from "./VideoCard";
+import VideoCard, { AdVideoCard } from "./VideoCard";
 import { useDispatch, useSelector } from "react-redux";
 import { addVideoList } from "../redux/videoSlice";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router";
 
 const VideoContainer = () => {
   const dispatch = useDispatch();
@@ -23,8 +24,11 @@ const VideoContainer = () => {
 
   return (
     <div className="flex flex-wrap">
+      {videos[0] && <AdVideoCard info={videos[0]} />}
       {videos.map((video) => (
-        <VideoCard info={video} key={video.id} />
+        <Link key={video.id} to={"/watch?v=" + video.id}>
+          <VideoCard info={video} />
+        </Link>
       ))}
     </div>
   );
