@@ -11,3 +11,6 @@ export const YOUTUBE_VIDEO_DETAILS_API =
 
 export const YOUTUBE_SEARCH_API =
   "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+
+export const OFFSET_LIVE_CHAT = 30;
+export const OFFSET_LIVE_DELETE_CHAT = 1;

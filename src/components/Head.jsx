@@ -73,7 +73,11 @@ const Head = () => {
           onClick={toggleMenuHandler}
         />
         <Link to="/">
-          <img className="h-8 mx-2" alt="youtube-logo" src={YoutubeLogo} />
+          <img
+            className="h-8 mx-2 cursor-pointer"
+            alt="youtube-logo"
+            src={YoutubeLogo}
+          />
         </Link>
       </div>
       {/* search bar */}

@@ -71,3 +71,18 @@ new Map();
 - Fixed showSuggestions while scrolling
 
 - Added nested comments for n levels
+
+## Updating Live chat
+
+- Problems
+
+  - Get Data Live
+  - Update the UI
+
+- Live Data
+
+  - Web sockets - handshake -> bidirectional (no regular interval) example: Zerodha Trading Apps, Whatsapp (always in live chat use web sockets) otherwise the order of the chat will be messed up
+  - API polling - ui <- server (after an interval) (unidirectional) Example: Gmail, cric buzz, youtube chat
+
+- Added chat with API polling
+- deleted messages so that it does not explode the DOM
