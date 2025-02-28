@@ -69,3 +69,5 @@ new Map();
 - Added debouncing with clearing the event once the component is destroyed
 - Stored the search results as cache in redux store
 - Fixed showSuggestions while scrolling
+
+- Added nested comments for n levels
