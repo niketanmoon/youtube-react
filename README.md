@@ -86,3 +86,6 @@ new Map();
 
 - Added chat with API polling
 - deleted messages so that it does not explode the DOM
+
+- Added input box to send the message and chat inside live chat session
+- added chat slice
